@@ -53,12 +53,12 @@
         if(empty($usuario)){
             echo"<script> alert('Por favor, insira um nome de usuário.')</script>";
         }
-        elseif(empty($senha)){
-            echo"<script> alert('Por favor, insira uma senha.')</script>";
-        }
         elseif(empty($email)){
             echo"<script> alert('Por favor, insira um email.')</script>";
         }
+        elseif(empty($senha)){
+            echo"<script> alert('Por favor, insira uma senha.')</script>";
+        }   
 
         /*Condição principal. Caso o formulário seja devidamente
         preenchido, a senha é armazenada na variável $hash, que por sua
