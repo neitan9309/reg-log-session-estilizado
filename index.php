@@ -51,13 +51,13 @@
         
         //Algumas condições aninhadas para evitar que o script seja concluído com algum campo vazio.
         if(empty($usuario)){
-            echo"Por favor, insira um nome de usuário!";
+            echo"<script> alert('Por favor, insira um nome de usuário.')</script>";
         }
         elseif(empty($senha)){
-            echo"Por favor, insira uma senha!";
+            echo"<script> alert('Por favor, insira uma senha.')</script>";
         }
         elseif(empty($email)){
-            echo"Por favor, insira um email!";
+            echo"<script> alert('Por favor, insira um email.')</script>";
         }
 
         /*Condição principal. Caso o formulário seja devidamente
