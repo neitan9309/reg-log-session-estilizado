@@ -1,0 +1,66 @@
+@import './variaveis';
+
+body{
+    @include modeloBody();
+}
+
+.box_index{
+    @include modeloBox();
+}
+
+.box_index h2{
+    @include modeloFonteDstq();
+}
+
+.box_index h2:hover{
+    color: $secundaria;
+}
+
+.box_index form{
+    @include modeloInForm();
+}
+
+.form_index{
+    width: 100%;
+}
+
+.form_index input{
+    @include modeloFormInput;
+}
+
+.form_index input[type="text"],
+            input[type="email"],
+            input[type="password"]{
+                @include modeloFormCampos;
+            }
+
+.botoes_index{
+    margin-top: 33px;
+}
+
+.botoes_index a{
+    @include modeloBotoesLink;
+    padding: 9.2px 38px;
+    border-color: $secundaria;
+}
+
+.botoes_index a:hover{
+    background-color: $primaria;
+}
+
+.botoes_index input{
+    @include modeloBotoesInput;
+    padding: 11.5px 22px;
+}
+
+.botoes_index input:hover{
+    background-color: $primaria;
+}
+
+footer{
+    @include modeloFooter();
+}
+
+footer a{
+    color: $escurassa;
+}

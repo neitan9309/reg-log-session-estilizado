@@ -1,0 +1,66 @@
+@import './variaveis';
+
+body{
+    @include modeloBody();
+}
+
+.box_login{
+    @include modeloBox();
+}
+
+.box_login h2{
+    @include modeloFonteDstq();
+}
+
+.box_login h2:hover{
+    color: $secundaria;
+}
+
+.box_login form{
+    @include modeloInForm();
+}
+
+.form_login{
+    width: 100%;
+}
+
+.box_login input{
+    @include modeloFormInput;
+}
+
+.form_login input[type="text"],
+            input[type="email"],
+            input[type="password"]{
+                @include modeloFormCampos;
+            }
+
+.botoes_login{
+    margin-top: 33px;
+}
+
+.botoes_login a{
+    @include modeloBotoesLink;
+    padding: 11px 24px;
+    border-color: $secundaria;
+}
+
+.botoes_login a:hover{
+    background-color: $primaria;
+}
+
+.botoes_login input{
+    @include modeloBotoesInput;
+    padding: 10.3px 38px;
+}
+
+.botoes_login input:hover{
+    background-color: $primaria;
+}
+
+footer{
+    @include modeloFooter();
+}
+
+footer a{
+    color: $escurassa;
+}

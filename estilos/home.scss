@@ -1,0 +1,40 @@
+@import './variaveis';
+
+body{
+    @include modeloBody();
+    flex-direction: column;
+    text-align: center;
+    color: $primaria;
+    font-size: 15px;
+}
+
+.box_home h2{
+    @include modeloFonteDstq();
+}
+
+.box_home h2:hover{
+    color: $secundaria;
+}
+
+.box_home p{
+    color: $escurassa;
+}
+
+.botao_home{
+    @include modeloBotoesInput;
+    margin-top: 13px;
+    padding: 10px 27px;
+    border-color: $fundo2;
+}
+
+.botao_home:hover{
+    background-color: $primaria;
+}
+
+footer{
+    @include modeloFooter();
+}
+
+footer a{
+    color: $escurassa;
+}

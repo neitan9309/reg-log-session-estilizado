@@ -1,0 +1,125 @@
+/*Fontes importadas*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+/*Variáveis de cores*/
+$escurassa: #4e5830;
+$primaria: #79884f;
+$secundaria: #89995b;
+$terciaria: #abb985;
+$quaternaria: #cedca6;
+$fundo1: #f1fec6;
+$fundo2: #b7ca81;
+$fontBody: #ffff;
+
+/*Modelo para o elemento Body*/
+@mixin modeloBody(){
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: "PT Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-size: 1em;
+    font-style: normal;
+    color: $escurassa;
+    overflow: hidden;
+    background-image: url(../imagens/bg_fakebook.jpg);
+    background-size: cover;
+}
+
+/*Modelo para o "container" principal da página*/
+@mixin modeloBox(){
+    width: 33%;
+    height: 75%;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    border: solid 2px $quaternaria;
+    background-color: $fundo2;
+    box-shadow: 10px 10px 32px $secundaria;
+    border-radius: 2%;
+    backdrop-filter: blur(10px);
+    background: #b7ca81dc;
+}
+
+/*Modelo para o texto em destaque*/
+@mixin modeloFonteDstq(){
+    color: $primaria;
+    font-size: 3.7em;
+    transition: color 0.3s ease;
+    font-family: "Bebas Neue", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: bold;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+/*Modelo para os elementos dentro do formulário*/
+@mixin modeloInForm(){
+    color: $escurassa;
+    margin-top: -15px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+/*Modelo para os botões do formulário*/
+@mixin modeloFormInput(){
+    font-size: 0.8em;
+    margin-top: 2px;
+    margin-bottom: 7px;
+    border-radius: 2%;
+    font-family: "PT Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    text-align: center;
+}
+
+/*Modelo para os campos de entrada e seus textos*/
+@mixin modeloFormCampos(){
+    width: 53%;
+    padding: 4px;
+    outline: none;
+    color: $escurassa;
+    border: 1px solid $terciaria;
+    border-radius: 4px;
+    box-shadow: inset 3px 3px 10px $quaternaria;
+}
+
+/*Modelo para os botões de link <a>*/
+@mixin modeloBotoesLink(){
+    color: $fontBody;
+    font-size: 0.7em;
+    margin-right: 55px;
+    border-radius: 2.3px;
+    border: solid 2px $terciaria;
+    background-color: $secundaria;
+    text-decoration: none;
+    transition: background-color 0.3s ease; 
+}
+
+/*Modelo para os botões input*/
+@mixin modeloBotoesInput(){
+    color: $fontBody;
+    border: solid 2px $terciaria;
+    background-color: $secundaria;
+    border-radius: 2.3px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; 
+    box-shadow: 3px 3px 14px $secundaria;
+}
+
+/*Modelo para a sessão footer*/
+@mixin modeloFooter(){
+    font-size: 0.6em;
+    color: $primaria;
+    text-align: center;
+    padding-top: 10px;
+}
