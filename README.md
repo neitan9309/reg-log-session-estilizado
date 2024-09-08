@@ -1,4 +1,4 @@
-Código feito com PHP em que simulo um sistema de registro, login e sessão. Versão estilizada.
+Versão estilizada do sistema de login, registro e sessão que criei com PHP.
 
 Para rodar em sua máquina, crie uma tabela no seu banco de dados (no meu caso, fakebook) com o seguinte comando:
 
